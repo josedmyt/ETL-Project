@@ -143,7 +143,8 @@ browser.find_by_text('Sign In').click()
 time.sleep(5)
 browser.fill('sc.keyword', 'data analyst')
 browser.find_by_id('HeroSearchButton').click()
-browser.find_by_id('prefix__icon-close-1').click()
+try: browser.find_by_id('prefix__icon-close-1').click()
+except: print("")
 
 title=[]
 company=[]
